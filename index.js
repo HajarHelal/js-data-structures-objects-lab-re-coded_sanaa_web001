@@ -14,9 +14,9 @@ function destructivelyUpdateDriverWithKeyAndValue(driver, key, value) {
 function deleteFromDriverByKey(driver, key) {
   // Alternate using ES6 Spread operators:
   // const newObj = { ...driver }
-  const newObj = Object.assign({}, driver);
+  const Obj = Object.assign({}, driver);
 
-  delete newObj[key];
+  delete Obj[key];
 
-  return newObj;
+  return Obj;
 }
