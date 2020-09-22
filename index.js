@@ -6,3 +6,8 @@ function updateDriverWithKeyAndValue(driver, key, value) {
 // return { ...driver, ...{ [key]: value } }
 return Object.assign({}, driver, { [key]: value });
 }
+function UpdateDriverWithKeyAndValue(driver, key, value) {
+  driver[key] = value;
+
+  return driver;
+}
